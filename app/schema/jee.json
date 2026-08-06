@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "name": "JEE Question Paper",
+  "description": "Extract all questions from a JEE question paper according to this schema.",
+
+  "fields": {
+    "questions": {
+      "type": "array",
+      "description": "List of all questions in the paper.",
+
+      "items": {
+        "type": "object",
+
+        "fields": {
+          "subject": {
+            "type": "string",
+            "description": "Subject of the question. Must be one of: Physics, Chemistry, Mathematics."
+          },
+
+          "questionText": {
+            "type": "string",
+            "description": "Complete question text including mathematical expressions."
+          },
+
+          "imageUrl": {
+            "type": "string",
+            "nullable": true,
+            "description": "Path or filename of the extracted image if the question contains a diagram; otherwise null."
+          },
+
+          "optionA": {
+            "type": "string"
+          },
+
+          "optionB": {
+            "type": "string"
+          },
+
+          "optionC": {
+            "type": "string"
+          },
+
+          "optionD": {
+            "type": "string"
+          },
+
+          "correctOption": {
+            "type": "string",
+            "nullable": true,
+            "description": "Correct option if available in the document, otherwise null."
+          },
+
+          "positiveMarks": {
+            "type": "integer",
+            "default": 4
+          },
+
+          "negativeMarks": {
+            "type": "integer",
+            "default": -1
+          }
+        },
+
+        "required": [
+          "subject",
+          "questionText",
+          "optionA",
+          "optionB",
+          "optionC",
+          "optionD"
+        ]
+      }
+    }
+  }
+}

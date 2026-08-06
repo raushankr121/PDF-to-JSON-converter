@@ -1,0 +1,28 @@
+{
+    "questions": [
+        {
+            "question_number": 1,
+            "page_number": 10,
+            "question_text": "Q1. The compounds which give positive Fehling's test is/are:\n (1) Formalin (2) Acetaldehyde (3) Acetone (4) Benzaldehyde \n Choose the correct option:\n (a) (2) and (3) (b) (2) only (c) (2), (3) and (4) (d) (1) and (2)",
+            "options": [
+                "(1) Formalin",
+                "(2) Acetaldehyde",
+                "(3) Acetone",
+                "(4) Benzaldehyde Choose the correct option:",
+                "(a) (2) and (3)",
+                "(b) (2) only",
+                "(c) (2), (3) and (4)",
+                "(d) (1) and (2)"
+            ],
+            "images": [],
+            "equations": [],
+            "metadata": {
+                "subject": "Chemistry",
+                "questionNumber": 1,
+                "pageNumber": 10,
+                "positiveMarks": 4,
+                "negativeMarks": -1
+            }
+        }
+    ]
+}
